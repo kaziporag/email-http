@@ -65,16 +65,16 @@ class HTTP_API_Settings {
                 $data = $wpdb->get_row( "SELECT * FROM $this->table_name WHERE current_user_id = '$curr_user'" );
                 if(isset($data->id) && $data->id!='') { 
             ?>
-            <h1>Sender Edit Info</h1>
+            <h1>Reply-to Sender Edit Info</h1>
             <form id="sender_edit_form" name="sender_edit_form">
                 <input type="hidden" name="wqentryid" id="wqentryid" value="<?=$data->id?>" />
                 <p>
-                    <label for="sender-name">Sender Name:</label>
+                    <label for="sender-name">Reply-to Name:</label>
                     <input type="text" id="sender_name" name="sender_name" placeholder="Your Name" value="<?=$data->name?>" required>
                     <div id="sender_name_message" class="wqmessage"></div>
                 </p>
                 <p>
-                    <label for="sender-email">Sender Email:</label>
+                    <label for="sender-email">Reply-to Email:</label>
                     <input type="email" id="sender_email" name="sender_email" placeholder="Your Email" value="<?=$data->email?>" required>
                     <div id="sender_email_message" class="wqmessage"></div>
                 </p>

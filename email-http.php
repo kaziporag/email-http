@@ -156,11 +156,11 @@ class Email_HTTP {
                     <input type="email" id="to_email" name="to_email" required>
                 </p>
                 <p>
-                    <label for="from_name">From Name:</label>
+                    <label for="from_name">Reply-to Name:</label>
                     <input type="text" id="from_name" name="from_name" required>
                 </p>
                 <p>
-                    <label for="from_email">From Email:</label>
+                    <label for="from_email">Reply-to Email:</label>
                     <input type="email" id="from_email" name="from_email" required>
                 </p>
                 <p>
