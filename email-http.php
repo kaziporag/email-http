@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Email API
  * Description: Sending email in WordPress
- * Version: 1.1
+ * Version: 1.0.0
  * Author: Kazi Rabiul Islam
  * Author URI: https://kaziporag.devtheme.net/
  * License: GPL v2 or later
