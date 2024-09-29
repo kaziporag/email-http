@@ -136,7 +136,7 @@ class Email_HTTP {
     }
 
     /**
-     * Render email demo page
+     * Render email Sender page
      */
     public function render_email_page() {
         global $wpdb;
@@ -144,7 +144,7 @@ class Email_HTTP {
         $data = $wpdb->get_row( "SELECT * FROM $this->table_name WHERE current_user_id = '$curr_user'" );
         ?>
         <div class="wrap">
-            <h1>Email Demo</h1>
+            <h1>Email Sender Form</h1>
             
             <?php $this->show_admin_notices(); ?>
 
