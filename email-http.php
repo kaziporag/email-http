@@ -64,6 +64,8 @@ class Email_HTTP {
             id mediumint(9) NOT NULL AUTO_INCREMENT,
             name varchar(50) NOT NULL,
             email varchar(50) NOT NULL,
+            email_title varchar(100) NOT NULL,
+            message varchar(100) NOT NULL,
             current_user_id int(10) NOT NULL,
             PRIMARY KEY (id)
         ) $charset_collate;";
@@ -205,8 +207,8 @@ class Email_HTTP {
                     document.getElementById('to_email').value = 'example@example.com';
                     document.getElementById('from_name').value = '<?php echo $data->name; ?>';
                     document.getElementById('from_email').value = '<?php echo $data->email; ?>';
-                    document.getElementById('subject').value = 'Test Email';
-                    document.getElementById('message').value = 'This is a test email message.';
+                    document.getElementById('subject').value = '<?php echo $data->email_title; ?>';
+                    document.getElementById('message').value = '<?php echo $data->message; ?>';
                 }
             </script>
 

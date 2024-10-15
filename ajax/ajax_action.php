@@ -15,6 +15,8 @@
       $wpdb->insert($table_name, array(
         "name" => $_POST['sender_name'],
         "email" => $_POST['sender_email'],
+        "email_title" => $_POST['title_email'],
+        "message" => $_POST['main_message'],
         "current_user_id" => get_current_user_id()
       ));
   
@@ -35,6 +37,8 @@
       $wpdb->update( $table_name, array(
         "name" => $_POST['sender_name'],
         "email" => $_POST['sender_email'],
+        "email_title" => $_POST['title_email'],
+        "message" => $_POST['main_message'],
         "current_user_id" => get_current_user_id(),
       ), array('id' => $_POST['wqentryid']) );
 

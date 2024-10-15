@@ -79,6 +79,16 @@ class HTTP_API_Settings {
                     <div id="sender_email_message" class="wqmessage"></div>
                 </p>
                 <p>
+                    <label for="sender-email">Email Title:</label>
+                    <input type="text" id="title_email" name="title_email" placeholder="Email Title" value="<?=$data->email_title?>" required>
+                    <div id="title_email_message" class="wqmessage"></div>
+                </p>
+                <p>
+                    <label for="message">Message (Plain Text):</label>
+                    <textarea id="main_message" name="main_message" rows="10" cols="50" placeholder="Your Message" required><?php echo $data->message; ?></textarea>
+                    <div id="message_email_message" class="wqmessage"></div>
+                </p>
+                <p>
                     <input type="submit" class="wqsubmit_button button button-primary" value="Edit Info">
                     <div class="wqsubmit_message"></div>
                 </p>
@@ -98,6 +108,16 @@ class HTTP_API_Settings {
                     <label for="sender-email">Reply-to Email:</label>
                     <input type="email" id="sender_email" name="sender_email" placeholder="Your Email" required>
                     <div id="sender_email_message" class="wqmessage"></div>
+                </p>
+                <p>
+                    <label for="sender-email">Email Title:</label>
+                    <input type="text" id="title_email" name="title_email" placeholder="Email Title" required>
+                    <div id="title_email_message" class="wqmessage"></div>
+                </p>
+                <p>
+                    <label for="message">Message (Plain Text):</label>
+                    <textarea id="main_message" name="main_message" rows="10" cols="50" placeholder="Your Message" required></textarea>
+                    <div id="message_email_message" class="wqmessage"></div>
                 </p>
                 <p>
                     <input type="submit" class="wqsubmit_button button button-primary" value="Save Info">
