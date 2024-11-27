@@ -3,7 +3,7 @@
  * Description: Sending email in WordPress
  * Version: 1.0.0
  * Author: Kazi Rabiul Islam
- * Author URI: https://kaziporag.devtheme.net/
+ * Author URI: https://kazirabiul.me/
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
